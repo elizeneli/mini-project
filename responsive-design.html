@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+  </head>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@100&display=swap');
+   
+   p{
+    font-size: 14px;
+    color: rgb(63, 61, 61);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+   }
+    @media screen and (min-width: 0px){
+      body {
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      background: rgb(190,157,105);
+      background: linear-gradient(0deg, rgba(190,157,105,1) 0%, rgba(150,155,160,1) 92%);
+    }
+      .gallery{
+      width: 85%;
+      box-sizing: border-box;
+      margin: 40px auto 100px auto;
+    }
+    .items{
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px
+    }
+    .item{
+      filter: grayscale(100%);
+      background-color: white;
+      border: 5px dotted rgb(176, 176, 176);
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      transition: all 0.4s;
+      overflow: hidden;
+    }
+     /*.item:nth-child(odd){
+   transform: rotate(2deg);
+   }
+   .item:nth-child(even){
+    transform: rotate(-2deg);
+   }*/
+   .item:hover{
+    filter: grayscale(0%);
+    border: 5px dashed rgb(176, 176, 176);
+    transform: scale(1.05);
+    z-index: 9999;
+   }
+    img{
+      display: block;
+      width: 80%;
+    }
+    h1 {
+      font-size: 72px;
+      font-family: "Parisienne", cursive;
+      margin: 0px 0px 30px 0px;
+      text-align: center;
+    }
+
+    }
+    @media screen and (min-width: 600px) {
+      body {
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      background: rgb(190,157,105);
+      background: linear-gradient(0deg, rgba(190,157,105,1) 0%, rgba(150,155,160,1) 92%);
+    }
+      .gallery{
+      width: 80%;
+      box-sizing: border-box;
+      margin: 50px auto 100px auto;
+    }
+    .items{
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px
+    }
+    .item{
+      filter: grayscale(100%);
+      background-color: white;
+      border: 5px dotted rgb(176, 176, 176);
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      transition: all 0.4s;
+      overflow: hidden;
+    }
+    /*
+   .item:nth-child(odd){
+   transform: rotate(2deg);
+   }
+   .item:nth-child(even){
+    transform: rotate(-2deg);
+     }*/
+  
+   .item:hover{
+    filter: grayscale(0%);
+    border: 5px dashed rgb(176, 176, 176);
+    transform: scale(1.1);
+    z-index: 9999;
+   }
+    img{
+      display: block;
+      width: 80%;
+    }
+    h1 {
+      color: rgb(63, 61, 61);
+      font-size: 72px;
+      font-family: "Parisienne", cursive;
+      margin: 0px 0px 30px 0px;
+      text-align: center;
+    }
+    }
+    @media screen and (min-width: 900px) {
+   
+      .gallery{
+      width: 840px;
+      box-sizing: border-box;
+      margin: 80px auto;
+    }
+    .items{
+      width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px
+    }
+    .item{
+      filter: grayscale(100%);
+      background-color: white;
+      border: 5px dotted rgb(176, 176, 176);
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      transition: all 0.4s;
+      overflow: hidden;
+    }
+   /*.item:nth-child(odd){
+   transform: rotate(2deg);
+   }
+   .item:nth-child(even){
+    transform: rotate(-2deg);
+   }*/
+   .item:hover{
+    filter: grayscale(0%);
+    border: 5px dashed rgb(176, 176, 176);
+    transform: scale(1.20);
+    z-index: 9999;
+   }
+    img{
+      display: block;
+      width: 80%;
+    }
+    h1 {
+      font-size: 72px;
+      font-family: "Parisienne", cursive;
+      margin: 0px 0px 30px 0px;
+      text-align: center;
+    }
+    }
+  </style>
+  <body>
+    <section class="gallery">
+      <h1>Gallery</h1>
+      <div class="items">
+        <div class="item">
+          <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>   <div class="item">
+           <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>   <div class="item">
+            <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>   <div class="item">
+               <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>   <div class="item">
+            <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>   <div class="item">
+           <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>   <div class="item">
+               <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>   <div class="item">
+              <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>   <div class="item">
+              <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>   <div class="item">
+              <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>   <div class="item">
+              <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>   <div class="item">
+               <img src="./5.1.jpg" alt="Name and Surname" />
+        </div>
+        </div>
+      </div>
+      <p> Copyrights &copy; 2022. All rights reserved.</p>
+    </section>
+  </body>
+</html>
